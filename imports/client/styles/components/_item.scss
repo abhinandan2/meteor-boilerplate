@@ -1,0 +1,32 @@
+.item {
+	background: $item-bg;
+	border: 1px solid $item-border;
+	padding: $space;
+	margin-bottom: $space;	
+	h2 {
+		white-space: nowrap;
+		max-width: $site-max-width;
+		margin-bottom: 1rem;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}:hover{
+		/*overflow: visible;*/
+		white-space: normal;
+	}
+}
+
+.item__message-right {
+    position: absolute;
+    right: 16px;
+}
+
+.item__message {
+	margin-top: 1rem;
+	color: $item-text-color;
+}
+.item__status-message {
+	color: $item-text-color;
+	font-style: italic;
+	text-align: center;
+	margin: 0;
+}

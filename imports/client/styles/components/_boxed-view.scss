@@ -1,0 +1,30 @@
+.boxed-view {
+	background: $boxed-view-overlay-bg;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.boxed-view__box {
+	background-color: $boxed-view-bg;
+	padding: 2.4rem;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.boxed-view__form {
+	display: flex;
+	flex-direction: column;
+	width: 30rem;
+}
+
+.boxed-view--overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: transparentize($boxed-view-overlay-bg, .3);
+}

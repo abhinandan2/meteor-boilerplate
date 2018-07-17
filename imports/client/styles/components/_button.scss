@@ -1,0 +1,44 @@
+.button {
+	background-color: $button-bg;
+	border: none;
+	color: $button-color;
+	cursor: pointer;
+	padding: $input-spacing;
+	text-transform: capitalize;
+	font-size: $base-font-size;
+	margin-bottom: $space;
+	/*line-height: 1.2rem;*/
+}
+
+.button--secondary {
+	color: $button-sec-color;
+	border: 1px solid $button-sec-border-color;
+	background: $button-sec-bg;
+}
+
+.button--link {
+	display: inline-block;
+	text-decoration: none;
+
+}
+
+.button--pill {
+	background-color: transparent;
+	border: 1px solid $button-pill-color;
+	color: $button-pill-color;
+	padding: .3rem 0.8rem;
+	margin: 0 ($space / 2) 0 0;
+}
+
+.button--pill:hover {
+	background-color: $brand-sec-color;
+}
+
+.button--link-text {
+	background: none;
+	padding: 0;
+	margin: 0;
+	text-decoration: underline;
+	border: none;
+	color: white;
+}
