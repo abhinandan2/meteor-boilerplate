@@ -1,3 +1,6 @@
-# Short Link
+# Meteor Boilerplate
 
-Short link generator.
+## Includes Login and Signup components
+## Along with a Dashboard
+
+### Created by Abhioxic
