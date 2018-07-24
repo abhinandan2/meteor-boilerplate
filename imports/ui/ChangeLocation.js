@@ -45,8 +45,8 @@ export default class ChangeLocation extends React.Component {
 
 	onSubmit(e){
 		e.preventDefault();
-		console.log('button works!');
-
+		console.log('button works!', this.state.value);
+		Meteor.call('location.insert', this.state.value);
 	}
 
 	renderAutoCompleteList(){
@@ -85,7 +85,7 @@ export default class ChangeLocation extends React.Component {
 				        />
 				        <datalist id='location'>{this.renderAutoCompleteList()}</datalist>
 				       <InputGroup.Button>
-						        <Button type='submit' disabled={this.state.state !== 'success'}>Search!</Button>
+						        <Button type='submit' >Add this location!</Button>
 						   </InputGroup.Button>
 			        </InputGroup>
 					   </Col>
